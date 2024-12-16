@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/goit-advancedjs-hw-02/assets/favicon-D-psAV3p.ico" />
     <title>Promise generator</title>
-    <script type="module" crossorigin src="/goit-advancedjs-hw-02/assets/main-CtRhXCA5.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-02/assets/main-4cfYBffW.css">
+    <script type="module" crossorigin src="/goit-advancedjs-hw-02/assets/2-snackbar-Cc3J2FAh.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-02/assets/main-CUY7Kl9G.js">
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-02/assets/iziToast.min-B2VUsL6Z.js">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-02/assets/main-pajNJxRy.css">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-02/assets/iziToast-D_nxXpU-.css">
   </head>
-  <body>
+  <body class="snackbar-page">
     <header class="header">
       <div class="container">
         <nav>
@@ -26,6 +29,27 @@
         </nav>
       </div>
     </header>
-    <div class="container"></div>
+    <div class="container">
+      <form class="form">
+        <label class="delay-input">
+          Delay (ms)
+          <input type="number" name="delay" required />
+        </label>
+
+        <fieldset>
+          <legend>State</legend>
+          <label>
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button type="submit">Create notification</button>
+      </form>
+    </div>
   </body>
 </html>
