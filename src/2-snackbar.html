@@ -7,7 +7,7 @@
     <title>Promise generator</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="snackbar-page">
     <header class="header">
       <div class="container">
         <nav>
@@ -25,7 +25,28 @@
         </nav>
       </div>
     </header>
-    <div class="container"></div>
+    <div class="container">
+      <form class="form">
+        <label class="delay-input">
+          Delay (ms)
+          <input type="number" name="delay" required />
+        </label>
+
+        <fieldset>
+          <legend>State</legend>
+          <label>
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button type="submit">Create notification</button>
+      </form>
+    </div>
     <script src="./js/2-snackbar.js" type="module"></script>
     <script src="./js/main.js" type="module"></script>
   </body>

@@ -1,3 +1,61 @@
-div {
-  display: block;
+.snackbar-page {
+  background: url('../img/bg-snackbar.png') no-repeat;
+  background-position: top right;
+  background-size: 35%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 50px;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #2e2f42;
+  letter-spacing: 0.64px;
+}
+
+.form input,
+.form fieldset {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+}
+.form input {
+  padding: 8px 0 8px 16px;
+}
+.form input:hover,
+.form fieldset:hover {
+  border: 1px solid #000000;
+}
+.form input:focus {
+  border: 1px solid #4e75ff;
+}
+.form fieldset:focus {
+  border: 1px solid #000000;
+}
+.delay-input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form button {
+  margin-top: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #4e75ff;
+  outline: none;
+  border: none;
+  transition: background 0.3s ease;
+
+  font-weight: 500;
+  color: #fff;
+}
+.form button:hover {
+  background: #6c8cff;
 }
